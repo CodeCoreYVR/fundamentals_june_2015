@@ -1,0 +1,82 @@
+body {
+  background-color: #DEDEDE;
+  background: url('confectionary.png');
+}
+
+p {
+  font-size: 15px;
+  /*color: #f00 */
+  /*color: #ff0001;*/
+  color: rgba(255,0,0, 0.5);
+  text-decoration: underline;
+}
+
+div {
+  text-align: center;
+  /*width: 50%;*/
+  width: 100px;
+  height: 100px;
+  background-color: rgba(29, 47, 125, 0.5);
+  border: 2px solid #f00;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+/* This targets any element with id welcome */
+#welcome {
+  text-decoration: none;
+  color: brown;
+}
+
+#languages {
+  list-style-type: square;
+}
+
+/* This targets any element with a class special */
+.special {
+  font-weight: bold;
+}
+
+/* This targets any `a` element with a class special */
+/* it also targets any `div` element with a class special*/
+a.special, div.special {
+  text-decoration: line-through;
+}
+
+/* this targets a form with id `contact-us` */
+form#contact-us {
+
+}
+
+.red {
+  color: red;
+}
+
+/* this targets any `a` element nested inside another
+    element with a class `welcome`  */
+.welcome a {
+  font-size: 15px;
+  color: green;
+}
+
+.welcome a:hover {
+  font-size: 20px;
+  color: cyan;
+}
+
+p#abc.xyz {
+
+}
+
+div.special p {
+
+}
+
+ul.special li {
+
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}

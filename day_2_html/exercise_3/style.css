@@ -1,0 +1,23 @@
+.container {
+  width: 500px;
+  background-color: #DEDEDE;
+  border: 1px solid #8B8989;
+  border-radius: 5px;
+  height: 500px;
+}
+
+.container img {
+  width: 100%;
+}
+
+.image-container {
+  border-top: 1px dashed;
+  border-bottom: 1px dashed;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: orange;
+}

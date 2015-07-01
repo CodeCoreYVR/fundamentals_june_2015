@@ -1,0 +1,30 @@
+body {
+  background: url("universe.jpg");
+  background-size: cover;
+  margin: 0;
+}
+
+div.banner {
+  background-color: rgba(255,0,0,0.5);
+  height: 200px;
+  text-align: center;
+  font-size: 33px;
+  color: #fff;
+}
+
+div.banner p {
+  width: 30%;
+  margin: auto;
+}
+
+p {
+  color: yellow;
+}
+
+#abc {
+  color: cyan;
+}
+
+.xyz {
+  color: blue!important;
+}
