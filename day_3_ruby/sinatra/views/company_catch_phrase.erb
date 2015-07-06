@@ -1,0 +1,10 @@
+<h1>Company Catch Phrase Generator</h1>
+<form action="/company_catch_phrase" method="post">
+  <input type="submit" value="Generate Catch Phrase">
+</form>
+
+<%# this is because in the case of get "/company_catch_phrase"
+    @phrase will be nil so we don't want to show anything %>
+<% if @phrase %>
+  <h2>Catch Phrase is: <%= @phrase %></h2>
+<% end %>
