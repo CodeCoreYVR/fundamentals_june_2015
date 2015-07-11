@@ -1,0 +1,14 @@
+.box {
+  width: 600px;
+  height: 600px;
+  background-color: red;
+  text-align: center;
+}
+
+.cake {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 50%;
+  margin-top: -50px;
+}

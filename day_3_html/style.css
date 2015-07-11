@@ -1,0 +1,78 @@
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  display: inline-block;
+}
+
+.big-box {
+  width: 600px;
+  height: 600px;
+  border: 1px solid;
+}
+
+.move {
+  position: relative;
+  top: 40px;
+  left: 40px;
+}
+
+.box-1 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  float: left;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+p span.special {
+  color: red;
+  text-decoration: underline;
+}
+
+img.cake {
+  width: 100px;
+  float: left;
+}
+
+.contact-us {
+  position: fixed;
+  top: 0px;
+  left: 50px;
+  background-color: red;
+  border: 1px solid;
+  height: 30px;
+  width: 90px;
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+}
+
+p.special {
+  font-family: Arial;
+}
+
+@keyframes switchcolor {
+	from {background-color: red;}
+	to {background-color: yellow;}
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: switchcolor;
+    animation-duration: 10s;
+}
