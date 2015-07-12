@@ -1,0 +1,8 @@
+<h1>Pick Winner</h1>
+<form action="/pick_winner" method="post">
+  <textarea name="players" placeholder="names here.."><%= @names %></textarea>
+  <input type="submit" value="Pick Winner">
+</form>
+<% if @winner %>
+  The Winner is: <%= @winner %>
+<% end %>
