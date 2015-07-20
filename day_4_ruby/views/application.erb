@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Welcome to my Sinatra App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/style.css">
   <style>
     body {
@@ -10,16 +11,31 @@
   </style>
 </head>
 <body>
-  <a href="/">Home</a> |
-  <a href="/temp_convertor">Temp Convertor</a> |
-  <a href="/pick_winner">Pick a Winner</a> |
-  <a href="/contact">Contact</a> |
-  <a href="/all_contacts">All Contacts</a> |
-  You last visited the page for: <%= session[:last_visited_user] %> |
-  <a href="/change_color/red">Red</a>
-  <a href="/change_color/green">Green</a>
-  <a href="/change_color/blue">Blue</a>
-  <hr>
-  <%= yield %>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Home</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="/temp_convertor">Temp Convertor</a></li>
+              <li><a href="/pick_winner">Pick a Winner</a></li>
+              <li><a href="/contact"><i class="glyphicon glyphicon-user"></i>Contact</a></li>
+              <li><a href="/all_contacts">All Contacts</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    You last visited the page for: <%= session[:last_visited_user] %> |
+    <a href="/change_color/red">Red</a>
+    <a href="/change_color/green">Green</a>
+    <a href="/change_color/blue">Blue</a>
+
+    <hr>
+    <%= yield %>
+  </div>
 </body>
 </html>
